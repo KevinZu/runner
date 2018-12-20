@@ -2,6 +2,12 @@
 #define __RUNNER_H__
 
 
+#define RUNNER_NODE_BUSY 1
+#define RUNNER_NODE_IDLE 2
+#define RUNNER_NODE_EXCEPTION 3
+
+
+
 typedef struct runner_node {
 
 	unsigned int node_status;
