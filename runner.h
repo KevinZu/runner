@@ -12,13 +12,16 @@ typedef struct runner_node {
 
 	unsigned int node_status;
 	struct runner_node *next;
+	ctrl_module_t *m_motor_module;
+	ctrl_module_t *m_cylinder_module;
+	ctrl_module_t *m_carrier_module;
 	
 }runner_node_t;
 
 
 typedef struct runner_manager {
 	runner_node_t *first_node;
-	int (*add_runner_node)(runner_ctrl_t *node);
+	//int (*add_runner_node)(runner_ctrl_t *node);
 }runner_manager_t;
 
 #endif
